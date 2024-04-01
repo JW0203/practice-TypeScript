@@ -3,7 +3,9 @@ function oddOrEven(number : number) :void{
     if (number %2 === 0){
         result =  "짝수" // even
     }
-    result = "홀수" // odd
+    if (number %2 !== 0){
+        result = "홀수" // odd
+    }
     return console.log(`${number}은 ${result} 입니다.`)
 }
 
