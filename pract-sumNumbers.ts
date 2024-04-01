@@ -8,6 +8,27 @@ const sumNumbers = (arr: number[]): number =>{
 }
 console.log(sumNumbers(numbers))
 
+// for each
+const sumNumbersForeach = (arr:number[]) : number =>{
+    let result = 0;
+    arr.forEach(number =>
+    {result += number;}
+    )
+    return result
+}
+
+console.log(sumNumbersForeach(numbers))
+// for
+const sumNumbersFor = (arr:number[]) : number =>{
+    let result = 0;
+    for(let i = 0; i < arr.length; i++){
+        result += arr[i];
+    }
+    return result;
+}
+
+console.log(sumNumbersFor(numbers))
+
 // reduce 이용
 const sumNumbersReduce = (arr: number[]):number =>{
     // total 을 0 으로 초기화
