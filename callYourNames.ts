@@ -33,3 +33,31 @@ const callUserNames = (userList:User[]) =>{
 }
 
 callUserNames(users)
+
+interface Student{
+    name: string;
+    score: number
+}
+const studentsScore: Student[] = [
+    {
+        name: "박재성",
+        score: 89
+    },
+    {
+        name: "문동은",
+        score: 92
+    },
+    {
+        name: "박연진",
+        score: 97
+    }
+];
+
+const callHonorStudents =(students:Student[]) =>{
+    Object.keys(students).filter((key, index) =>{
+        if (students[index].score > 90){
+            console.log(students[index].name)
+        }
+    });
+}
+callHonorStudents(studentsScore)
